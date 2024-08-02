@@ -39,4 +39,21 @@
 ### Status: Downloaded newer image for httpd:latest
 ### 3a496442147ca1656c2f0cc12a23dee7a9dcd882f89fb750befb17da6b660558
 
+# Ejercicio 3
+## docker ps -a
+
+### CONTAINER ID   IMAGE     COMMAND              CREATED          STATUS                       PORTS                                   NAMES
+### 9d4032dbb03d   ubuntu    "bash"               4 minutes ago    Exited (129) 4 minutes ago                                           kind_solomon
+### 3a496442147c   httpd     "httpd-foreground"   7 minutes ago    Up 7 minutes                 0.0.0.0:8000->80/tcp, :::8000->80/tcp   awesome_stonebraker
+### 4716214ba780   ubuntu    "bash"               11 minutes ago   Exited (129) 8 minutes ago                                           pedantic_einstein
+
+## docker rm 9d4032dbb03d
+### }9d4032dbb03d
+
+## docker container prune
+### WARNING! This will remove all stopped containers.
+### Are you sure you want to continue? [y/N] y
+### Deleted Containers:
+### 4716214ba7805eb62bf386246998183f6d5ac32a46e2df605de3ecffc64a22d9
+### Total reclaimed space: 10B
 
