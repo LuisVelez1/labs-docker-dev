@@ -57,3 +57,18 @@
 ### 4716214ba7805eb62bf386246998183f6d5ac32a46e2df605de3ecffc64a22d9
 ### Total reclaimed space: 10B
 
+## docker build -t ubuntu-updated:latest .
+### [+] Building 10.0s (6/6) FINISHED                                                                                                                      docker:default
+### => [internal] load build definition from dockerfile                                                                                                             0.1s
+### => => transferring dockerfile: 96B                                                                                                                              0.0s
+### => [internal] load metadata for docker.io/library/ubuntu:latest                                                                                                 0.0s
+### => [internal] load .dockerignore                                                                                                                                0.2s
+### => => transferring context: 2B                                                                                                                                  0.0s
+### => [1/2] FROM docker.io/library/ubuntu:latest                                                                                                                   0.1s
+### => [2/2] RUN apt-get update && apt-get upgrade -y                                                                                                               8.6s
+### => exporting to image                                                                                                                                           0.7s
+### => => exporting layers                                                                                                                                          0.5s
+### => => writing image sha256:45634d859b3edba7ca26564b93249bb5db396f6570c6e9e4427204d29c2115bd                                                                     0.0s
+### => => naming to docker.io/library/ubuntu-updated:latest 
+
+
