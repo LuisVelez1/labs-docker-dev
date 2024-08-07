@@ -162,6 +162,24 @@
 ### docker run -d -p 8080:80 my-nginx-image
 #### de09dba6ee7b9ad9dd6b3b54e5082b17e12bf20d596a6d8c706f7ce0999a3553
 
+## Ejercicio 2
+### docker build -t my-ubuntu-image .
+#### [+] Building 2.4s (8/8) FINISHED                                                                                                                       docker:default
+#### => [internal] load build definition from dockerfile                                                                                                             0.1s
+#### => => transferring dockerfile: 89B                                                                                                                              0.0s
+#### => [internal] load metadata for docker.io/library/ubuntu:latest                                                                                                 0.0s
+#### => [internal] load .dockerignore                                                                                                                                0.1s
+#### => => transferring context: 2B                                                                                                                                  0.0s
+#### => CACHED [1/3] FROM docker.io/library/ubuntu:latest                                                                                                            0.0s
+#### => [internal] load build context                                                                                                                                0.1s
+#### => => transferring context: 31B                                                                                                                                 0.0s
+#### => [2/3] WORKDIR /app                                                                                                                                           0.2s
+#### => [3/3] COPY myfile.txt .                                                                                                                                      0.3s
+#### => exporting to image                                                                                                                                           1.4s
+#### => => exporting layers                                                                                                                                          1.2s
+#### => => writing image sha256:59cc441f9462f7f30b066a8e42b80da74d33a21a87b561d5be1f103d29aa5e24                                                                     0.0s
+#### => => naming to docker.io/library/my-ubuntu-image   
+
 
 
 

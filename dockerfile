@@ -1,3 +1,5 @@
-FROM nginx:latest
-COPY index.html /usr/share/nginx/html/
+FROM ubuntu:latest
+WORKDIR /app
+COPY myfile.txt .
+
 
