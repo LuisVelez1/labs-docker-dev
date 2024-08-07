@@ -180,6 +180,25 @@
 #### => => writing image sha256:59cc441f9462f7f30b066a8e42b80da74d33a21a87b561d5be1f103d29aa5e24                                                                     0.0s
 #### => => naming to docker.io/library/my-ubuntu-image   
 
+## Ejercicio 3
+### docker build -t my-python-image .
+#### [+] Building 4.6s (8/8) FINISHED                                                                                                                       docker:default
+#### => [internal] load build definition from dockerfile                                                                                                             0.1s
+#### => => transferring dockerfile: 111B                                                                                                                             0.0s
+#### => [internal] load metadata for docker.io/library/python:3.9                                                                                                    0.0s
+#### => [internal] load .dockerignore                                                                                                                                0.1s
+#### => => transferring context: 2B                                                                                                                                  0.0s
+#### => [internal] load build context                                                                                                                                0.2s
+#### => => transferring context: 57B                                                                                                                                 0.0s
+#### => [1/3] FROM docker.io/library/python:3.9                                                                                                                      0.9s
+#### => [2/3] WORKDIR /app                                                                                                                                           0.2s
+#### => [3/3] COPY script.py .                                                                                                                                       0.3s
+#### => exporting to image                                                                                                                                           2.7s
+#### => => exporting layers                                                                                                                                          2.5s
+#### => => writing image sha256:626df2109d21e26c1dc78dad0073fb3da52a446f14c30ac1efb75a6517e6c4ff                                                                     0.0s
+#### => => naming to docker.io/library/my-python-image
+### docker run --name my-python-container my-python-image
+#### Hola docker
 
 
 
